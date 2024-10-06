@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: #98FF98;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+}
+
+/* Call to Action Button */
+.cta-btn {
+  background-color: #f39c12;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.cta-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Skills Section */
+.skills .skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Projects Section */
+.projects .project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 300px; /* Fixed width for project cards */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Styling for the View Project Button */
+.view-report-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #3498db; /* Primary button color (blue) */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for button */
+  margin-top: 10px; /* Space above the button */
+}
+
+.view-report-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  cursor: pointer;
+}
+
+.view-report-btn:active {
+  background-color: #1c6692; /* Even darker blue on click */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+/* Goals Section */
+.goals {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007BFF; /* Blue color for heading */
+}
+
+.goal-list {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  gap: 30px; /* Space between the cards */
+  flex-wrap: wrap; /* Wrap items to new lines on small screens */
+}
+
+.goal-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Inner padding */
+  width: 300px; /* Fixed width for cards */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.goal-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.goal-card h3 {
+  font-size: 1.5rem;
+  color: #007BFF; /* Consistent blue color */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.goal-card ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  text-align: left; /* Left align the list items */
+}
+
+.goal-card li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #fff; /* White background for contact section */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Space between contact methods */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.contact-method {
+  background-color: #f0f0f0; /* Light background for each contact method */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  width: 250px; /* Fixed width for contact methods */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.contact-method:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 10px; /* Space above the button */
+  padding: 10px 15px;
+  background-color: #3498db; /* Primary button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.contact-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
